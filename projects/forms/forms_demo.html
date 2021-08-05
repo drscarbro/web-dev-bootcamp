@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <h2>Simple Form Demo</h2>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p><label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="enter password" name="password">
+        </p>
+        <p>
+            <label for="color">Select a color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type="number" placeholder="enter a number" name="num">
+        </p>
+        <p>
+            <label>
+                Enter a time:
+                <input type="time" name="time">
+            </label>
+        </p>
+        <button type="button">Regular ol' button</button>
+        <button>Submit</button>
+        <input type="submit" value="type=submit">
+    </form>
+    <h2>Hijacking Searches</h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <label for="search">Search Reddit:</label>
+        <input type="text" name="q" id="search">
+        <button>Submit Search</button>
+    </form>
+    <h3>Google</h3>
+    <form action="https://www.google.com/search">
+        <label for="search">Search Google:</label>
+        <input type="text" name="q" id="search">
+        <button>Submit Search</button>
+    </form>
+    <h3>YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <label for="search">Search YouTube:</label>
+        <input type="text" name="search_query" id="search">
+        <button>Submit Search</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">Agree to Terms Of Service (TOS)</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="l">
+            <label for="xl">XL:</label>
+            <input type="radio" name="size" id="xl" value="xl">
+        <p>
+            <label for="meal">Please select a meal type:</label>
+            <select name="meal" id="meal">
+                <option value="steak">Steak</option>
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" name="cheese" id="cheese" min="0" max="1000">
+        </p>
+        <button>Submit</button>
+        </p>
+    </form>
+
+    <h2>Validations</h2>
+    <form action="/dummy">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="firstname" required>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
