@@ -1,0 +1,11 @@
+section {
+    height: 800px;
+    width: 80%;
+    background: url( "./nhat-nguyen-hoang-naANKmAyNl0-unsplash.jpg" ) center/cover;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
